@@ -9,5 +9,5 @@ decently new kvm host with virtio, virtnet and virt hwclock support.
 
 IPV6 is built as module, so is also most of the network stack (I for instance
 use some of the iptables modules). Currently not using devtmpfs, but since it's
-something I always deploy with, I'm considdering to add it (no need to run udev
+something I always deploy with, I'm adding it sooner or later (no need to run udev
 on your minimalist servers when mdev from busybox does a most excellent job).
