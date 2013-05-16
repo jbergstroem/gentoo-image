@@ -1,13 +1,8 @@
-This is two rather minimal kernel configs suitable for KVM vm's. They come in i686
-and amd64 flavors.
+This is a repository with different linux kernel configs
+They are meant to be bare-bones with a minimal subset of functionality.
 
-The naming convention (especially the gentoo-part) is heritage. The first kernel
-was built as a template for Tilaa's (http://tilaa.nl) gentoo vm.
+And yes, they fit on a floppy drive.
 
-Only a minimal amount of drivers is built. The config assumes you're running a
-decently new kvm host with virtio, virtnet and virt hwclock support.
-
-IPV6 is built as module, so is also most of the network stack (I for instance
-use some of the iptables modules). Currently not using devtmpfs, but since it's
-something I always deploy with, I'm adding it sooner or later (no need to run udev
-on your minimalist servers when mdev from busybox does a most excellent job).
+Current list:
+ - qemu-kvm-* : A kernel suitable for vm's running on kvm.
+                Assumes you're providing virtio, virtnet and kvm tsc from host
